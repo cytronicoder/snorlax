@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snorlax OS</title>
+    <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=YOUR_API_KEY"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <form id="googleSearchForm">
+        <input
+          type="text"
+          id="googleSearchInput"
+          placeholder="Search Google..."
+        />
+        <button type="submit">🔍</button>
+      </form>
+      <div id="clock">
+        <span id="hours">00</span>:<span id="minutes">00</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="weatherWidget">Loading...</div>
+    </header>
+
+    <main>
+      <div class="left-panel">
+        <div id="spotifySection">
+          <iframe
+            src="https://open.spotify.com/embed/playlist/1jsCNxo2yjibsgN2PSAaom?theme=0"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="center-panel">
+        <img id="snorlaxGif" src="" alt="Snorlax Gif" />
+        <p id="snorlaxNote">Your custom note here!</p>
+      </div>
+
+      <div class="right-panel">
+        <div id="pomodoroSection">
+          <h2>Pomodoro</h2>
+          <div id="timerDisplay">25:00</div>
+          <button id="startTimer">Start</button>
+          <button id="pauseTimer">Pause</button>
+          <button id="resetTimer">Reset</button>
+        </div>
+        <div id="todoSection">
+          <h2>To-Do List</h2>
+          <input type="text" id="newTask" placeholder="New task" />
+          <button id="addTask">Add</button>
+          <ul id="tasks"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/googleSearch.js"></script>
+    <script src="js/snorlax.js"></script>
+    <script src="js/pomodoro.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/clock.js"></script>
+  </body>
+</html>

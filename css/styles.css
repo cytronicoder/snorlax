@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pangolin", Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s, color 0.3s;
+  background-color: #899dd2;
+  color: #1d2b4a;
+}
+
+button {
+  margin: 15px 5px 5px 5px;
+  padding: 10px 12px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  background: #53679c;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #3e4f7c;
+  transform: scale(1.05);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 3px dashed rgba(255, 255, 255, 0.3);
+  background: linear-gradient(to right, #6b82b3, #899dd2);
+  color: #fff;
+}
+
+#googleSearchInput {
+  width: 225px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.left-panel,
+.right-panel {
+  width: 20%;
+  height: calc(100vh - 80px - 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(153, 171, 224, 0.8);
+  border-radius: 10px;
+}
+
+.center-panel {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pomodoroSection,
+#todoSection {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+#newTask {
+  width: 150px;
+}
+
+#snorlaxGif {
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+#snorlaxNote {
+  font-size: 1.2em;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#tasks {
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#timerDisplay {
+  margin-top: 15px;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+#spotifySection {
+  margin-top: 15px;
+  width: 100%;
+}
+
+#clock {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 160px;
+  font-size: 1.5em;
+  justify-content: center;
+  position: relative;
+}
+
+#hours, #minutes {
+  font-size: 1.5em;
+}
+
+#seconds {
+  align-self: flex-end;
+  margin-left: 5px;
+  position: relative;
+  bottom: 4px;
+  color: #53679c;
+}
