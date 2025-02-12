@@ -15,7 +15,7 @@ body {
 }
 
 button {
-  margin: 15px 5px 5px 5px;
+  margin: 5px;
   padding: 10px 12px;
   font-size: 1em;
   cursor: pointer;
@@ -63,19 +63,27 @@ main {
 
 .left-panel,
 .right-panel {
-  width: 20%;
   height: calc(100vh - 80px - 30px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 15px;
   border-radius: 10px;
   background: rgba(153, 171, 224, 0.8);
   border-radius: 10px;
 }
 
+.left-panel {
+  width: 30%;
+}
+
+.right-panel {
+  width: 25%;
+}
+
 .center-panel {
-  width: 60%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,10 +105,6 @@ main {
   border-radius: 10px;
 }
 
-#newTask {
-  width: 150px;
-}
-
 #snorlaxGif {
   width: 250px;
   margin-bottom: 15px;
@@ -114,13 +118,14 @@ main {
 }
 
 #tasks {
+  margin-top: 15px;
   text-align: left;
-  max-height: 200px;
+  min-height: 50%;
   overflow-y: auto;
 }
 
 #timerDisplay {
-  margin-top: 15px;
+  margin: 10px 0;
   font-size: 2.5em;
   font-weight: bold;
   padding: 10px;
@@ -143,7 +148,8 @@ main {
   position: relative;
 }
 
-#hours, #minutes {
+#hours,
+#minutes {
   font-size: 1.5em;
 }
 
@@ -153,4 +159,69 @@ main {
   position: relative;
   bottom: 4px;
   color: #53679c;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 5px;
+  border-radius: 8px;
+  cursor: grab;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.task-buttons button {
+  padding: 5px 8px;
+  font-size: 0.9em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.complete-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.complete-btn:hover {
+  background: #3d8b3d;
+}
+
+.edit-btn {
+  background: #ff9800;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #e08b00;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
+
+.completed .task-buttons button {
+  background: darkgray;
+}
+
+.completed .task-buttons button:hover {
+  background: gray;
 }

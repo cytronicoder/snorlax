@@ -31,15 +31,12 @@
 
     <main>
       <div class="left-panel">
-        <div id="spotifySection">
-          <iframe
-            src="https://open.spotify.com/embed/playlist/1jsCNxo2yjibsgN2PSAaom?theme=0"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
+        <div id="todoSection">
+          <h2>To-Do List</h2>
+          <input type="text" id="newTask" placeholder="New task" />
+          <button id="addTask">Add</button>
+          <button id="clearTasks">Clear All</button>
+          <ul id="tasks"></ul>
         </div>
       </div>
 
@@ -56,11 +53,15 @@
           <button id="pauseTimer">Pause</button>
           <button id="resetTimer">Reset</button>
         </div>
-        <div id="todoSection">
-          <h2>To-Do List</h2>
-          <input type="text" id="newTask" placeholder="New task" />
-          <button id="addTask">Add</button>
-          <ul id="tasks"></ul>
+        <div id="spotifySection">
+          <iframe
+            src="https://open.spotify.com/embed/playlist/1jsCNxo2yjibsgN2PSAaom"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
         </div>
       </div>
     </main>
