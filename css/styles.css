@@ -10,8 +10,57 @@ body {
   display: flex;
   flex-direction: column;
   transition: background 0.3s, color 0.3s;
-  background-color: #899dd2;
   color: #1d2b4a;
+}
+
+body.snorlax-theme {
+  background-color: #899dd2;
+}
+
+body.snorlax-theme header {
+  background: linear-gradient(to right, #6b82b3, #899dd2);
+}
+
+body.snorlax-theme button {
+  background: #53679c;
+}
+
+body.snorlax-theme button:hover {
+  background: #3e4f7c;
+}
+
+body.snorlax-theme .left-panel,
+body.snorlax-theme .right-panel {
+  background: rgba(153, 171, 224, 0.8);
+}
+
+body.snorlax-theme #seconds {
+  color: #53679c;
+}
+
+body.ditto-theme {
+  background-color: #d594b7;
+}
+
+body.ditto-theme header {
+  background: linear-gradient(to right, #d594b7, #f0a8c4);
+}
+
+body.ditto-theme button {
+  background: #b57f9b;
+}
+
+body.ditto-theme button:hover {
+  background: #a06687;
+}
+
+body.ditto-theme .left-panel,
+body.ditto-theme .right-panel {
+  background: rgba(229, 164, 199, 0.9);
+}
+
+body.ditto-theme #seconds {
+  color: #b57f9b;
 }
 
 button {
@@ -22,13 +71,11 @@ button {
   border-radius: 10px;
   border: none;
   transition: 0.2s ease-in-out;
-  background: #53679c;
   color: white;
   font-weight: bold;
 }
 
 button:hover {
-  background: #3e4f7c;
   transform: scale(1.05);
 }
 
@@ -39,8 +86,6 @@ header {
   padding: 15px;
   font-size: 1.2em;
   font-weight: bold;
-  border-bottom: 3px dashed rgba(255, 255, 255, 0.3);
-  background: linear-gradient(to right, #6b82b3, #899dd2);
   color: #fff;
 }
 
@@ -59,14 +104,13 @@ main {
 
 .left-panel,
 .right-panel {
-  height: calc(100vh - 80px - 30px);
+  height: calc(100vh - 80px - 10px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(153, 171, 224, 0.8);
 }
 
 .left-panel {
@@ -83,6 +127,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#themeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 #pomodoroSection,
@@ -147,7 +198,6 @@ main {
   margin-left: 5px;
   position: relative;
   bottom: 4px;
-  color: #53679c;
 }
 
 .task-item {

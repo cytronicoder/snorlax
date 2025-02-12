@@ -18,13 +18,27 @@
       href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
       rel="stylesheet"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/favicon-16x16.png"
+    />
     <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
-    <link rel="manifest" href="/public/site.webmanifest">
+    <link rel="manifest" href="/public/site.webmanifest" />
   </head>
-  <body>
+  <body class="snorlax-theme">
     <header>
       <form id="googleSearchForm">
         <input
@@ -50,11 +64,16 @@
           <button id="clearTasks">Clear All</button>
           <ul id="tasks"></ul>
         </div>
+        <div id="themeSection">
+          <h2>Theme</h2>
+          <button id="snorlaxTheme">Snorlax</button>
+          <button id="dittoTheme">Ditto</button>
+        </div>
       </div>
 
       <div class="center-panel">
-        <img id="snorlaxGif" src="" alt="Snorlax Gif" />
-        <p id="snorlaxNote">Your custom note here!</p>
+        <img id="snorlaxGif" src="" alt="Snorlax/Ditto Gif" />
+        <p id="snorlaxNote"></p>
       </div>
 
       <div class="right-panel">
