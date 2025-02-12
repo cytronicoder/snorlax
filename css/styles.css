@@ -44,10 +44,6 @@ header {
   color: #fff;
 }
 
-#googleSearchInput {
-  width: 225px;
-}
-
 input[type="text"] {
   padding: 10px;
   font-size: 1em;
@@ -71,7 +67,6 @@ main {
   padding: 15px;
   border-radius: 10px;
   background: rgba(153, 171, 224, 0.8);
-  border-radius: 10px;
 }
 
 .left-panel {
@@ -79,21 +74,15 @@ main {
 }
 
 .right-panel {
-  width: 25%;
+  width: 30%;
 }
 
 .center-panel {
-  width: 45%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.right-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 #pomodoroSection,
@@ -141,11 +130,11 @@ main {
 #clock {
   display: flex;
   align-items: center;
-  border-radius: 10px;
-  width: 160px;
-  font-size: 1.5em;
   justify-content: center;
   position: relative;
+  width: 160px;
+  font-size: 1.5em;
+  border-radius: 10px;
 }
 
 #hours,
@@ -224,4 +213,60 @@ main {
 
 .completed .task-buttons button:hover {
   background: gray;
+}
+
+#stickyNotesSection {
+  width: 100%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.sticky-note {
+  background: #fff9a6;
+  border: 1px solid #f0e68c;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  min-height: 200px;
+  resize: both;
+  overflow: auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.drag-handle {
+  background: #f0e68c;
+  cursor: move;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.sticky-note textarea {
+  width: 100%;
+  height: calc(100% - 80px);
+  border: none;
+  background: transparent;
+  resize: none;
+  font-family: inherit;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.delete-note {
+  position: absolute;
+  bottom: 6px;
+  left: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+
+.delete-note:hover {
+  background: none;
 }
