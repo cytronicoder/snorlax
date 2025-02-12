@@ -22,7 +22,7 @@ function renderStickyNotes() {
 
         const deleteBtn = document.createElement("button");
         deleteBtn.classList.add("delete-note");
-        deleteBtn.textContent = "🗑️";
+        deleteBtn.textContent = "X";
         deleteBtn.addEventListener("click", () => {
             deleteStickyNote(note.id);
         });
