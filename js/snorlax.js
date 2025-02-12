@@ -32,9 +32,15 @@ const snorlaxNotes = [
 const dittoGif = 'https://media.tenor.com/st6vDtbyyQwAAAAi/ditto-pokemon.gif';
 const dittoNote = "Ditto! (That's all he says.)";
 
-let currentTheme = 'snorlax';
+let currentTheme = localStorage.getItem('theme') || 'snorlax';
 let previousGifIndex = -1;
 let previousNoteIndex = -1;
+
+if (currentTheme === 'snorlax') {
+    document.body.classList.add('snorlax-theme');
+} else if (currentTheme === 'ditto') {
+    document.body.classList.add('ditto-theme');
+}
 
 function getRandomIndex(array, previousIndex) {
     let newIndex;
@@ -71,6 +77,7 @@ snorlaxThemeBtn.addEventListener('click', () => {
     document.body.classList.add('snorlax-theme');
     previousGifIndex = -1;
     previousNoteIndex = -1;
+    localStorage.setItem('theme', currentTheme);
     updateGifAndNote();
 });
 
@@ -78,5 +85,6 @@ dittoThemeBtn.addEventListener('click', () => {
     currentTheme = 'ditto';
     document.body.classList.remove('snorlax-theme');
     document.body.classList.add('ditto-theme');
+    localStorage.setItem('theme', currentTheme);
     updateGifAndNote();
 });
