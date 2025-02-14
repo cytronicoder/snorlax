@@ -297,6 +297,7 @@ main {
 
 .sticky-note textarea {
   width: 100%;
+  min-height: 100px;
   height: calc(100% - 80px);
   border: none;
   background: transparent;
