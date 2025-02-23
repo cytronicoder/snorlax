@@ -357,6 +357,10 @@ body.ditto-theme #rssSection .rss-entry:first-child {
   margin-bottom: 8px;
 }
 
+#rssSection .rss-entry a {
+  text-decoration: none;
+}
+
 body.snorlax-theme #rssSection .rss-entry a {
   color: #53679c;
 }
