@@ -321,3 +321,50 @@ main {
 .delete-note:hover {
   background: none;
 }
+
+#rssSection {
+  width: 50%;
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  text-align: left;
+}
+
+#rssSection .rss-entry {
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+body.snorlax-theme #rssSection .rss-entry:first-child {
+  color: white;
+  background: rgba(153, 171, 224, 0.8);
+}
+
+body.ditto-theme #rssSection .rss-entry:first-child {
+  color: white;
+  background: rgba(229, 164, 199, 0.9);
+}
+
+#rssSection .rss-entry:not(:first-child) {
+  color: gray;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0.5;
+}
+
+#rssSection .rss-entry:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+body.snorlax-theme #rssSection .rss-entry a {
+  color: #53679c;
+}
+
+body.ditto-theme #rssSection .rss-entry a {
+  color: #a06687;
+}
+
+#rssSection .rss-entry a:hover {
+  text-decoration: underline;
+}
