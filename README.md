@@ -1,3 +1,5 @@
+### 📂 This repository is now archived as a finished project.
+
 # Snorlax OS
 
 I picked up [Thomas' OS building jam](https://jams.hackclub.com/batch/webOS) and decided to build a simple home screen for my browser. I named it after my favorite Pokémon, and I used HTML, CSS, and JavaScript to build it because I had 3 days to build it. Why? Very good question. I don't know.
